@@ -816,10 +816,6 @@ static void BsaveClassLinks(
    long i;
    long dummy_class_index;
 
-   size_t v1, v2;
-   
-   v1 = sizeof(long);
-   v2 = sizeof(DEFCLASS *);
    for (i = 0 ;  i < cls->directSuperclasses.classCount ; i++)
      {
       dummy_class_index = DefclassIndex(cls->directSuperclasses.classArray[i]);

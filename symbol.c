@@ -389,10 +389,16 @@ globle void *EnvAddSymbol(
 
     peek = get_struct(theEnv,symbolHashNode);
 
-    if (past == NULL) SymbolData(theEnv)->SymbolTable[tally] = peek;
-    else past->next = peek;
+    if (past == NULL)
+        SymbolData(theEnv)->SymbolTable[tally] = peek;
+    else
+        past->next = peek;
 
-    length = strlen(str) + 1;
+    if (str == NULL)
+        length = 0;
+    else
+        length = strlen(str) + 1;
+      
     peek->contents = (char *) gm2(theEnv,length);
     peek->next = NULL;
     peek->bucket = (unsigned)tally;

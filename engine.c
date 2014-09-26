@@ -184,7 +184,7 @@ globle long long EnvRun(
 #endif
       maxActivations = GetNumberOfActivations(theEnv);
       sumActivations = maxActivations;
-      startTime = gentime();
+      startTime = 0.0; // gentime(); // This value is never read, so why do work calling gentime?
      }
 #endif
 
@@ -519,7 +519,7 @@ globle long long EnvRun(
      {
       char printSpace[60];
 
-      endTime = gentime();
+      endTime = 0.0; // gentime(); // This is never read so why do work with gentime?
 
       PrintLongInteger(theEnv,WDIALOG,rulesFired);
       EnvPrintRouter(theEnv,WDIALOG," rules fired");
