@@ -705,6 +705,7 @@
 		4C386DE519D5C55000697F46 /* cstrnops.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cstrnops.c; sourceTree = SOURCE_ROOT; };
 		4C386DE619D5C55000697F46 /* tmpltlhs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tmpltlhs.c; sourceTree = SOURCE_ROOT; };
 		4C386DE719D5C55000697F46 /* userdata.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = userdata.c; sourceTree = SOURCE_ROOT; };
+		4C386F3F19D6073100697F46 /* CLIPS.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CLIPS.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -721,6 +722,7 @@
 		4C386C7119D4C1BF00697F46 = {
 			isa = PBXGroup;
 			children = (
+				4C386F3F19D6073100697F46 /* CLIPS.podspec */,
 				4C386C7C19D4C1BF00697F46 /* CLIPS */,
 				4C386C7B19D4C1BF00697F46 /* Products */,
 			);
