@@ -789,7 +789,7 @@ static void UpdateDefclassesScope(
    struct defmodule *matchModule;
 
    newModuleID = (int) ((struct defmodule *) EnvGetCurrentModule(theEnv))->bsaveID;
-   newScopeMapSize = (sizeof(char) * ((GetNumberOfDefmodules(theEnv) / BITS_PER_BYTE) + 1));
+   newScopeMapSize = (sizeof(char) * (unsigned)((GetNumberOfDefmodules(theEnv) / BITS_PER_BYTE) + 1));
    newScopeMap = (char *) gm2(theEnv,newScopeMapSize);
    for (i = 0 ; i < CLASS_TABLE_HASH_SIZE ; i++)
      for (theDefclass = DefclassData(theEnv)->ClassTable[i] ;

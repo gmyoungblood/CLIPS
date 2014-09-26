@@ -479,7 +479,7 @@ globle void EnvGetDefmessageHandlerList(
         cls != NULL ;
         cls = (DEFCLASS *) EnvGetNextDefclass(theEnv,(void *) cls))
      {
-      classiLimit = inhp ? cls->allSuperclasses.classCount : 1;
+      classiLimit = inhp ? (int)cls->allSuperclasses.classCount : 1;
       for (classi = 0 ; classi < classiLimit ; classi++)
         i += cls->allSuperclasses.classArray[classi]->handlerCount;
      }
@@ -492,7 +492,7 @@ globle void EnvGetDefmessageHandlerList(
         cls != NULL ;
         cls = (DEFCLASS *) EnvGetNextDefclass(theEnv,(void *) cls))
      {
-      classiLimit = inhp ? cls->allSuperclasses.classCount : 1;
+      classiLimit = inhp ? (int)cls->allSuperclasses.classCount : 1;
       for (classi = 0 ; classi < classiLimit ; classi++)
         {
          supcls = cls->allSuperclasses.classArray[classi];
@@ -1054,7 +1054,7 @@ static unsigned CountSubclasses(
            cnt += CountSubclasses(subcls,inhp,tvid);
         }
      }
-   return(cnt);
+   return((unsigned)cnt);
   }
 
 /*********************************************************************
@@ -1099,10 +1099,10 @@ static unsigned StoreSubclasses(
            }
            
          if (inhp && (subcls->directSubclasses.classCount != 0))
-           i += StoreSubclasses(mfval,i,subcls,inhp,tvid,storeName);
+           i += StoreSubclasses(mfval,(unsigned)i,subcls,inhp,tvid,storeName);
         }
      }
-   return(i - si);
+   return((unsigned)i - si);
   }
 
 /*********************************************************

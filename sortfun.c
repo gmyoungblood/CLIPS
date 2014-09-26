@@ -213,7 +213,7 @@ globle void SortFunction(
 
    for (i = 2; i <= argumentCount; i++)
      {
-      EnvRtnUnknown(theEnv,i,&theArguments[i-2]);
+      EnvRtnUnknown(theEnv,(int)i,&theArguments[i-2]);
       if (GetType(theArguments[i-2]) == MULTIFIELD)
         { argumentSize += GetpDOLength(&theArguments[i-2]); }
       else

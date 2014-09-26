@@ -471,7 +471,7 @@ globle void CallSpecificMethod(
      return;
    if (EnvArgTypeCheck(theEnv,"call-specific-method",2,INTEGER,&temp) == FALSE)
      return;
-   mi = CheckMethodExists(theEnv,"call-specific-method",gfunc,(long) DOToLong(temp));
+   mi = (int)CheckMethodExists(theEnv,"call-specific-method",gfunc,(long) DOToLong(temp));
    if (mi == -1)
      return;
    gfunc->methods[mi].busy++;

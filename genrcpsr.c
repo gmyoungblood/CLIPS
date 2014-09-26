@@ -267,7 +267,7 @@ globle intBool ParseDefmethod(
      }
    else if (theIndex != 0)
      {
-      mi = FindMethodByIndex(gfunc,theIndex);
+      mi = (int)FindMethodByIndex(gfunc,theIndex);
       if (mi == -1)
         mnew = TRUE;
       else if (gfunc->methods[mi].system)
@@ -409,7 +409,7 @@ globle DEFMETHOD *AddMethod(
    SaveBusyCount(gfunc);
    if (meth == NULL)
      {
-      mai = (mi != 0) ? FindMethodByIndex(gfunc,mi) : -1;
+      mai = (mi != 0) ? (int)FindMethodByIndex(gfunc,mi) : -1;
       if (mai == -1)
         meth = AddGenericMethod(theEnv,gfunc,mposn,mi);
       else

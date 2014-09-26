@@ -580,7 +580,7 @@ globle void PPDefmessageHandlerCommand(
    char *tname;
    DEFCLASS *cls = NULL;
    unsigned mtype;
-   HANDLER *hnd;
+   HANDLER *hnd = NULL;
 
    if (EnvArgTypeCheck(theEnv,"ppdefmessage-handler",1,SYMBOL,&temp) == FALSE)
      return;

@@ -886,7 +886,7 @@ globle unsigned short AdjustFieldPosition(
 
       if (markList->whichField == whichField)
         {
-         *extent = (markList->endPosition - markList->startPosition) + 1;
+         *extent = (int)(markList->endPosition - markList->startPosition) + 1;
          return(actualIndex);
         }
 

@@ -474,7 +474,7 @@ static void UpdateDefmodule(
         {
          DefmoduleData(theEnv)->DefmoduleArray[obji].itemsArray[i] =
              (struct defmoduleItemHeader *)
-             (*theItem->bloadModuleReference)(theEnv,obji);
+             (*theItem->bloadModuleReference)(theEnv,(int)obji);
         }
      }
 

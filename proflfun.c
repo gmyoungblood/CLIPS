@@ -502,9 +502,9 @@ globle void ProfileResetCommand(
       ResetProfileInfo((struct constructProfileInfo *)
                        TestUserData(ProfileFunctionData(theEnv)->ProfileDataID,theDefgeneric->header.usrData)); 
       
-      for (methodIndex = EnvGetNextDefmethod(theEnv,theDefgeneric,0);
+      for (methodIndex = (unsigned)EnvGetNextDefmethod(theEnv,theDefgeneric,0);
            methodIndex != 0;
-           methodIndex = EnvGetNextDefmethod(theEnv,theDefgeneric,methodIndex))
+           methodIndex = (unsigned)EnvGetNextDefmethod(theEnv,theDefgeneric,methodIndex))
         {
          theMethod = GetDefmethodPointer(theDefgeneric,methodIndex);
          ResetProfileInfo((struct constructProfileInfo *)
@@ -640,9 +640,9 @@ static void OutputConstructsCodeInfo(
       prefix = EnvGetDefgenericName(theEnv,theDefgeneric);
       prefixAfter = "\n";
 
-      for (methodIndex = EnvGetNextDefmethod(theEnv,theDefgeneric,0);
+      for (methodIndex = (unsigned)EnvGetNextDefmethod(theEnv,theDefgeneric,0);
            methodIndex != 0;
-           methodIndex = EnvGetNextDefmethod(theEnv,theDefgeneric,methodIndex))
+           methodIndex = (unsigned)EnvGetNextDefmethod(theEnv,theDefgeneric,methodIndex))
         {
          theMethod = GetDefmethodPointer(theDefgeneric,methodIndex);
 

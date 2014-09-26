@@ -1079,7 +1079,7 @@ static void SaveSingleInstanceBinary(
          Write out the number of atoms in the slot value
          =============================================== */
       bs.slotName = (long) sp->desc->slotName->name->bucket;
-      bs.valueCount = sp->desc->multiple ? GetInstanceSlotLength(sp) : 1;
+      bs.valueCount = sp->desc->multiple ? (unsigned)GetInstanceSlotLength(sp) : 1;
       fwrite((void *) &bs,(int) sizeof(struct bsaveSlotValue),1,bsaveFP);
       totalValueCount += (unsigned long) bs.valueCount;
      }

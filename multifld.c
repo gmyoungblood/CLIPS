@@ -379,7 +379,7 @@ globle void PrintMultifield(
    theMultifield = segment->theFields;
    if (printParens)
      EnvPrintRouter(theEnv,fileid,"(");
-   i = begin;
+   i = (int)begin;
    while (i <= end)
      {
       PrintAtom(theEnv,fileid,theMultifield[i].type,theMultifield[i].value);

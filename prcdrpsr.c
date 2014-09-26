@@ -637,7 +637,7 @@ static struct expr *BindParse(
    struct expr *texp;
    CONSTRAINT_RECORD *theConstraint = NULL;
 #if DEFGLOBAL_CONSTRUCT
-   struct defglobal *theGlobal;
+   struct defglobal *theGlobal = NULL;
    int count;
 #endif
 

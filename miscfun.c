@@ -1218,7 +1218,7 @@ globle void FuncallFunction(
 
            multiAdd = NULL;
            theMultifield = (struct multifield *) GetValue(theValue);
-           for (j = GetDOBegin(theValue); j <= GetDOEnd(theValue); j++)
+           for (j = (int)GetDOBegin(theValue); j <= GetDOEnd(theValue); j++)
              {
               nextAdd = GenConstant(theEnv,GetMFType(theMultifield,j),GetMFValue(theMultifield,j));
               if (multiAdd == NULL)

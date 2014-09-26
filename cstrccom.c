@@ -169,7 +169,7 @@ globle void *FindNamedConstruct(
   struct construct *constructClass)
   {
    void *theConstruct;
-   SYMBOL_HN *findValue;
+   SYMBOL_HN *findValue = NULL;
 
    /*==========================*/
    /* Save the current module. */
@@ -1434,7 +1434,7 @@ static unsigned ConstructWatchSupport(
   void (*setWatchFunc)(void *,unsigned,void *))
   {
    struct defmodule *theModule;
-   void *theConstruct;
+   void *theConstruct = NULL;
    DATA_OBJECT constructName;
    int argIndex = 2;
 

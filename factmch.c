@@ -396,7 +396,7 @@ static void ProcessMultifieldNode(
    /* Perform matching for nodes beneath this one. */
    /*==============================================*/
 
-   for (repeatCount = (long) (theSlotValue->multifieldLength -
+   for (repeatCount = (int)(theSlotValue->multifieldLength -
                       (newMark->startPosition + thePattern->leaveFields));
         repeatCount >= 0;
         repeatCount--)

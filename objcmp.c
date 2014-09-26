@@ -995,9 +995,9 @@ static intBool InheritanceLinksToCode(
    int inheritanceLinkCount,
        linkPrinted = FALSE;
 
-   inheritanceLinkCount = theDefclass->directSuperclasses.classCount +
+   inheritanceLinkCount = (int)(theDefclass->directSuperclasses.classCount +
                           theDefclass->directSubclasses.classCount +
-                          theDefclass->allSuperclasses.classCount;
+                          theDefclass->allSuperclasses.classCount);
 
    if (inheritanceLinkCount == 0)
      return(TRUE);

@@ -631,7 +631,7 @@ globle intBool HandlerSlotGetFunction(
    return(TRUE);
 
 HandlerGetError:
-   EarlySlotBindError(theEnv,theInstance,theDefclass,theReference->slotID);
+   EarlySlotBindError(theEnv,theInstance,theDefclass, (unsigned)theReference->slotID);
    theResult->type = SYMBOL;
    theResult->value = EnvFalseSymbol(theEnv);
    SetEvaluationError(theEnv,TRUE);
@@ -788,7 +788,7 @@ globle intBool HandlerSlotPutFunction(
    return(TRUE);
 
 HandlerPutError:
-   EarlySlotBindError(theEnv,theInstance,theDefclass,theReference->slotID);
+   EarlySlotBindError(theEnv,theInstance,theDefclass,(unsigned)theReference->slotID);
 
 HandlerPutError2:
    theResult->type = SYMBOL;

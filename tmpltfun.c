@@ -252,7 +252,7 @@ static void DuplicateModifyCommand(
    /* Duplicate the values from the old fact (skipping multifields). */
    /*================================================================*/
 
-   newFact = (struct fact *) CreateFactBySize(theEnv,oldFact->theProposition.multifieldLength);
+   newFact = (struct fact *) CreateFactBySize(theEnv,(unsigned)oldFact->theProposition.multifieldLength);
    newFact->whichDeftemplate = templatePtr;
    for (i = 0; i < (int) oldFact->theProposition.multifieldLength; i++)
      {

@@ -468,7 +468,7 @@ globle void *CreateDeftemplateScopeMap(
    templateName = ValueToString(theDeftemplate->header.name);
    matchModule = theDeftemplate->header.whichModule->theModule;
 
-   scopeMapSize = (sizeof(char) * ((GetNumberOfDefmodules(theEnv) / BITS_PER_BYTE) + 1));
+   scopeMapSize = (sizeof(char) * (unsigned)((GetNumberOfDefmodules(theEnv) / BITS_PER_BYTE) + 1));
    scopeMap = (char *) gm2(theEnv,scopeMapSize);
 
    ClearBitString((void *) scopeMap,scopeMapSize);

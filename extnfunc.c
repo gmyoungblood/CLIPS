@@ -349,7 +349,7 @@ static int RemoveHashFunction(
    struct FunctionHash *fhPtr, *lastPtr = NULL;
    unsigned hashValue;
 
-   hashValue = HashSymbol(ValueToString(fdPtr->callFunctionName),SIZE_FUNCTION_HASH);
+   hashValue = (unsigned)HashSymbol(ValueToString(fdPtr->callFunctionName),SIZE_FUNCTION_HASH);
 
    for (fhPtr = ExternalFunctionData(theEnv)->FunctionHashtable[hashValue];
         fhPtr != NULL;
@@ -633,7 +633,7 @@ globle struct FunctionDefinition *FindFunction(
 
    if (ExternalFunctionData(theEnv)->FunctionHashtable == NULL) return(NULL);
    
-   hashValue = HashSymbol(functionName,SIZE_FUNCTION_HASH);
+   hashValue = (unsigned)HashSymbol(functionName,SIZE_FUNCTION_HASH);
 
    findValue = (SYMBOL_HN *) FindSymbolHN(theEnv,functionName);
 
@@ -679,7 +679,7 @@ static void AddHashFunction(
    newhash = get_struct(theEnv,FunctionHash);
    newhash->fdPtr = fdPtr;
 
-   hashValue = HashSymbol(fdPtr->callFunctionName->contents,SIZE_FUNCTION_HASH);
+   hashValue = (unsigned)HashSymbol(fdPtr->callFunctionName->contents,SIZE_FUNCTION_HASH);
 
    temp = ExternalFunctionData(theEnv)->FunctionHashtable[hashValue];
    ExternalFunctionData(theEnv)->FunctionHashtable[hashValue] = newhash;

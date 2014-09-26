@@ -439,7 +439,7 @@ globle struct constraintRecord *AddConstraint(
 
    InstallConstraintRecord(theEnv,theConstraint);
    theConstraint->count = 1;
-   theConstraint->bucket = hashValue;
+   theConstraint->bucket = (int)hashValue;
    theConstraint->next = ConstraintData(theEnv)->ConstraintHashtable[hashValue];
    ConstraintData(theEnv)->ConstraintHashtable[hashValue] = theConstraint;
    return(theConstraint);

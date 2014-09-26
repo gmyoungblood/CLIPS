@@ -730,7 +730,7 @@ static void FormSlotNameMap(
    for (i = 0 ; i <= cls->maxSlotNameID ; i++)
      cls->slotNameMap[i] = 0;
    for (i = 0 ; i < cls->instanceSlotCount ; i++)
-     cls->slotNameMap[cls->instanceTemplate[i]->slotName->id] = i + 1;
+     cls->slotNameMap[cls->instanceTemplate[i]->slotName->id] = (int)(i + 1);
   }
 
 /********************************************************************
@@ -859,7 +859,7 @@ globle void *CreateClassScopeMap(
    className = ValueToString(theDefclass->header.name);
    matchModule = theDefclass->header.whichModule->theModule;
 
-   scopeMapSize = (sizeof(char) * ((GetNumberOfDefmodules(theEnv) / BITS_PER_BYTE) + 1));
+   scopeMapSize = (sizeof(char) * (unsigned)((GetNumberOfDefmodules(theEnv) / BITS_PER_BYTE) + 1));
    scopeMap = (char *) gm2(theEnv,scopeMapSize);
 
    ClearBitString((void *) scopeMap,scopeMapSize);

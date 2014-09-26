@@ -818,7 +818,7 @@ static void ObjectPatternMatch(
             offset = 0;
             if (ObjectReteData(theEnv)->CurrentPatternObjectSlot->desc->multiple)
               ObjectReteData(theEnv)->CurrentObjectSlotLength =
-                GetInstanceSlotLength(ObjectReteData(theEnv)->CurrentPatternObjectSlot);
+                (unsigned)GetInstanceSlotLength(ObjectReteData(theEnv)->CurrentPatternObjectSlot);
             else
               ObjectReteData(theEnv)->CurrentObjectSlotLength = 1;
            }

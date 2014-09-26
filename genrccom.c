@@ -904,7 +904,7 @@ globle void PPDefmethodCommand(
    gfunc = CheckGenericExists(theEnv,"ppdefmethod",gname);
    if (gfunc == NULL)
      return;
-   gi = CheckMethodExists(theEnv,"ppdefmethod",gfunc,(long) DOToLong(temp));
+   gi = (int)CheckMethodExists(theEnv,"ppdefmethod",gfunc,(long) DOToLong(temp));
    if (gi == -1)
      return;
    if (gfunc->methods[gi].ppForm != NULL)
@@ -962,7 +962,7 @@ globle char *EnvGetDefmethodPPForm(
 #endif
 
    gfunc = (DEFGENERIC *) ptr;
-   mi = FindMethodByIndex(gfunc,theIndex);
+   mi = (int)FindMethodByIndex(gfunc,theIndex);
    return(gfunc->methods[mi].ppForm);
   }
 
@@ -1698,7 +1698,7 @@ static unsigned DefmethodWatchSupport(
   void (*traceFunc)(void *,unsigned,void *,long),
   EXPRESSION *argExprs)
   {
-   void *theGeneric;
+   void *theGeneric = NULL;
    unsigned long theMethod = 0;
    int argIndex = 2;
    DATA_OBJECT genericName,methodIndex;

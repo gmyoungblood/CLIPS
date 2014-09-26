@@ -192,8 +192,6 @@
 
 /* Begin PBXFileReference section */
 		4C386C7A19D4C1BF00697F46 /* libCLIPS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCLIPS.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C386C8519D4C1BF00697F46 /* CLIPSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLIPSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C386C8819D4C1BF00697F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C386C9319D5C4F300697F46 /* constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constant.h; sourceTree = SOURCE_ROOT; };
 		4C386C9419D5C4F300697F46 /* rulepsr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rulepsr.h; sourceTree = SOURCE_ROOT; };
 		4C386C9519D5C4F300697F46 /* setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setup.h; sourceTree = SOURCE_ROOT; };
@@ -545,13 +543,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C386C8219D4C1BF00697F46 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -559,7 +550,6 @@
 			isa = PBXGroup;
 			children = (
 				4C386C7C19D4C1BF00697F46 /* CLIPS */,
-				4C386C8619D4C1BF00697F46 /* CLIPSTests */,
 				4C386C7B19D4C1BF00697F46 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -568,7 +558,6 @@
 			isa = PBXGroup;
 			children = (
 				4C386C7A19D4C1BF00697F46 /* libCLIPS.a */,
-				4C386C8519D4C1BF00697F46 /* CLIPSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -580,22 +569,6 @@
 				4C386C9219D4C32C00697F46 /* Implementation */,
 			);
 			path = CLIPS;
-			sourceTree = "<group>";
-		};
-		4C386C8619D4C1BF00697F46 /* CLIPSTests */ = {
-			isa = PBXGroup;
-			children = (
-				4C386C8719D4C1BF00697F46 /* Supporting Files */,
-			);
-			path = CLIPSTests;
-			sourceTree = "<group>";
-		};
-		4C386C8719D4C1BF00697F46 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4C386C8819D4C1BF00697F46 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4C386C9119D4C32000697F46 /* Headers */ = {
@@ -973,23 +946,6 @@
 			productReference = 4C386C7A19D4C1BF00697F46 /* libCLIPS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		4C386C8419D4C1BF00697F46 /* CLIPSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4C386C8E19D4C1BF00697F46 /* Build configuration list for PBXNativeTarget "CLIPSTests" */;
-			buildPhases = (
-				4C386C8119D4C1BF00697F46 /* Sources */,
-				4C386C8219D4C1BF00697F46 /* Frameworks */,
-				4C386C8319D4C1BF00697F46 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CLIPSTests;
-			productName = CLIPSTests;
-			productReference = 4C386C8519D4C1BF00697F46 /* CLIPSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1000,9 +956,6 @@
 				ORGANIZATIONNAME = gmyoungblood;
 				TargetAttributes = {
 					4C386C7919D4C1BF00697F46 = {
-						CreatedOnToolsVersion = 6.0.1;
-					};
-					4C386C8419D4C1BF00697F46 = {
 						CreatedOnToolsVersion = 6.0.1;
 					};
 				};
@@ -1020,20 +973,9 @@
 			projectRoot = "";
 			targets = (
 				4C386C7919D4C1BF00697F46 /* CLIPS */,
-				4C386C8419D4C1BF00697F46 /* CLIPSTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		4C386C8319D4C1BF00697F46 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C386C7619D4C1BF00697F46 /* Sources */ = {
@@ -1212,13 +1154,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C386C8119D4C1BF00697F46 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
@@ -1314,36 +1249,6 @@
 			};
 			name = Release;
 		};
-		4C386C8F19D4C1BF00697F46 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CLIPSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		4C386C9019D4C1BF00697F46 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CLIPSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1361,14 +1266,6 @@
 			buildConfigurations = (
 				4C386C8C19D4C1BF00697F46 /* Debug */,
 				4C386C8D19D4C1BF00697F46 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		4C386C8E19D4C1BF00697F46 /* Build configuration list for PBXNativeTarget "CLIPSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4C386C8F19D4C1BF00697F46 /* Debug */,
-				4C386C9019D4C1BF00697F46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

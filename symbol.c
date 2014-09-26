@@ -395,7 +395,7 @@ globle void *EnvAddSymbol(
     length = strlen(str) + 1;
     peek->contents = (char *) gm2(theEnv,length);
     peek->next = NULL;
-    peek->bucket = tally;
+    peek->bucket = (unsigned)tally;
     peek->count = 0;
     peek->permanent = FALSE;
     genstrcpy(peek->contents,str);
@@ -485,7 +485,7 @@ globle void *EnvAddDouble(
 
     peek->contents = number;
     peek->next = NULL;
-    peek->bucket = tally;
+    peek->bucket = (unsigned)tally;
     peek->count = 0;
     peek->permanent = FALSE;
 
@@ -549,7 +549,7 @@ globle void *EnvAddLong(
 
     peek->contents = number;
     peek->next = NULL;
-    peek->bucket = tally;
+    peek->bucket = (unsigned)tally;
     peek->count = 0;
     peek->permanent = FALSE;
 
@@ -649,7 +649,7 @@ globle void *EnvAddBitMap(
 
     peek->contents = (char *) gm2(theEnv,size);
     peek->next = NULL;
-    peek->bucket = tally;
+    peek->bucket = (unsigned)tally;
     peek->count = 0;
     peek->permanent = FALSE;
     peek->size = (unsigned short) size;
@@ -722,7 +722,7 @@ globle void *EnvAddExternalAddress(
     peek->externalAddress = theExternalAddress;
     peek->type = (unsigned short) theType;
     peek->next = NULL;
-    peek->bucket = tally;
+    peek->bucket = (unsigned)tally;
     peek->count = 0;
     peek->permanent = FALSE;
 
@@ -1642,7 +1642,7 @@ globle void SetAtomicValueIndices(
         {
          if ((symbolPtr->neededSymbol == TRUE) || setAll)
            {
-            symbolPtr->bucket = count++;
+            symbolPtr->bucket = (unsigned)count++;
             if (symbolPtr->bucket != (count - 1))
               { SystemError(theEnv,"SYMBOL",13); }
            }
@@ -1664,7 +1664,7 @@ globle void SetAtomicValueIndices(
         {
          if ((floatPtr->neededFloat == TRUE) || setAll)
            {
-            floatPtr->bucket = count++;
+            floatPtr->bucket = (unsigned)count++;
             if (floatPtr->bucket != (count - 1))
               { SystemError(theEnv,"SYMBOL",14); }
            }
@@ -1686,7 +1686,7 @@ globle void SetAtomicValueIndices(
         {
          if ((integerPtr->neededInteger == TRUE) || setAll)
            {
-            integerPtr->bucket = count++;
+            integerPtr->bucket = (unsigned)count++;
             if (integerPtr->bucket != (count - 1))
               { SystemError(theEnv,"SYMBOL",15); }
            }
@@ -1708,7 +1708,7 @@ globle void SetAtomicValueIndices(
         {
          if ((bitMapPtr->neededBitMap == TRUE) || setAll)
            {
-            bitMapPtr->bucket = count++;
+            bitMapPtr->bucket = (unsigned)count++;
             if (bitMapPtr->bucket != (count - 1))
               { SystemError(theEnv,"SYMBOL",16); }
            }
@@ -1741,7 +1741,7 @@ globle void RestoreAtomicValueBuckets(
       for (symbolPtr = symbolArray[i];
            symbolPtr != NULL;
            symbolPtr = symbolPtr->next)
-        { symbolPtr->bucket = i; }
+        { symbolPtr->bucket = (unsigned)i; }
      }
 
    /*===============================================*/
@@ -1755,7 +1755,7 @@ globle void RestoreAtomicValueBuckets(
       for (floatPtr = floatArray[i];
            floatPtr != NULL;
            floatPtr = floatPtr->next)
-        { floatPtr->bucket = i; }
+        { floatPtr->bucket = (unsigned)i; }
      }
 
    /*=================================================*/
@@ -1769,7 +1769,7 @@ globle void RestoreAtomicValueBuckets(
       for (integerPtr = integerArray[i];
            integerPtr != NULL;
            integerPtr = integerPtr->next)
-        { integerPtr->bucket = i; }
+        { integerPtr->bucket = (unsigned)i; }
      }
 
    /*================================================*/
@@ -1783,7 +1783,7 @@ globle void RestoreAtomicValueBuckets(
       for (bitMapPtr = bitMapArray[i];
            bitMapPtr != NULL;
            bitMapPtr = bitMapPtr->next)
-        { bitMapPtr->bucket = i; }
+        { bitMapPtr->bucket = (unsigned)i; }
      }
   }
 
