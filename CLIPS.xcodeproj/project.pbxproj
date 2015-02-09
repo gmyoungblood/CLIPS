@@ -6,6 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		4CD305E719EC39AC007DD198 /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4CD305E819EC39AC007DD198 /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				4CD305ED19EC3A0F007DD198 /* MultiPlatform Build */,
+			);
+			dependencies = (
+				4CD305EC19EC39FC007DD198 /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		4C386DE819D5C55000697F46 /* cstrccom.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C386D3F19D5C54F00697F46 /* cstrccom.c */; };
 		4C386DE919D5C55000697F46 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C386D4019D5C54F00697F46 /* main.c */; };
@@ -177,179 +192,188 @@
 		4C386E8F19D5C55000697F46 /* tmpltlhs.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C386DE619D5C55000697F46 /* tmpltlhs.c */; };
 		4C386E9019D5C55000697F46 /* userdata.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C386DE719D5C55000697F46 /* userdata.c */; };
 		4C386E9319D5E65A00697F46 /* clips.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CA719D5C4F300697F46 /* clips.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386E9419D5E70D00697F46 /* agenda.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CF719D5C4F300697F46 /* agenda.h */; };
-		4C386E9519D5E70D00697F46 /* analysis.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1B19D5C4F300697F46 /* analysis.h */; };
+		4C386E9419D5E70D00697F46 /* agenda.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CF719D5C4F300697F46 /* agenda.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386E9519D5E70D00697F46 /* analysis.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1B19D5C4F300697F46 /* analysis.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386E9619D5E70D00697F46 /* argacces.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386C9F19D5C4F300697F46 /* argacces.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386E9719D5E70E00697F46 /* bload.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386C9B19D5C4F300697F46 /* bload.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386E9819D5E70E00697F46 /* bmathfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CF819D5C4F300697F46 /* bmathfun.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386E9919D5E70E00697F46 /* bsave.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CA019D5C4F300697F46 /* bsave.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386E9A19D5E70E00697F46 /* classcom.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CA119D5C4F300697F46 /* classcom.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386E9B19D5E70E00697F46 /* classexm.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CA219D5C4F300697F46 /* classexm.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386E9C19D5E70E00697F46 /* classfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CA319D5C4F300697F46 /* classfun.h */; };
+		4C386E9C19D5E70E00697F46 /* classfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CA319D5C4F300697F46 /* classfun.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386E9D19D5E70E00697F46 /* classinf.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CA419D5C4F300697F46 /* classinf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386E9E19D5E70E00697F46 /* classini.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CA519D5C4F300697F46 /* classini.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386E9F19D5E70E00697F46 /* classpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CA619D5C4F300697F46 /* classpsr.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386EA019D5E70E00697F46 /* clsltpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CA819D5C4F300697F46 /* clsltpsr.h */; };
-		4C386EA119D5E70E00697F46 /* cmptblty.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2719D5C4F300697F46 /* cmptblty.h */; };
+		4C386EA019D5E70E00697F46 /* clsltpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CA819D5C4F300697F46 /* clsltpsr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EA119D5E70E00697F46 /* cmptblty.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2719D5C4F300697F46 /* cmptblty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EA219D5E70E00697F46 /* commline.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CA919D5C4F300697F46 /* commline.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386EA319D5E70E00697F46 /* conscomp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CAA19D5C4F300697F46 /* conscomp.h */; };
+		4C386EA319D5E70E00697F46 /* conscomp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CAA19D5C4F300697F46 /* conscomp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EA419D5E70E00697F46 /* constant.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386C9319D5C4F300697F46 /* constant.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EA519D5E70E00697F46 /* constrct.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CF919D5C4F300697F46 /* constrct.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386EA619D5E70E00697F46 /* constrnt.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CFA19D5C4F300697F46 /* constrnt.h */; };
+		4C386EA619D5E70E00697F46 /* constrnt.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CFA19D5C4F300697F46 /* constrnt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EA719D5E70E00697F46 /* crstrtgy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CFB19D5C4F300697F46 /* crstrtgy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386EA819D5E70E00697F46 /* cstrcbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CAB19D5C4F300697F46 /* cstrcbin.h */; };
-		4C386EA919D5E70E00697F46 /* cstrccmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2819D5C4F300697F46 /* cstrccmp.h */; };
-		4C386EAA19D5E70E00697F46 /* cstrccom.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1C19D5C4F300697F46 /* cstrccom.h */; };
+		4C386EA819D5E70E00697F46 /* cstrcbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CAB19D5C4F300697F46 /* cstrcbin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EA919D5E70E00697F46 /* cstrccmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2819D5C4F300697F46 /* cstrccmp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EAA19D5E70E00697F46 /* cstrccom.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1C19D5C4F300697F46 /* cstrccom.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EAB19D5E70E00697F46 /* cstrcpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CFC19D5C4F300697F46 /* cstrcpsr.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386EAC19D5E70E00697F46 /* cstrnbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2919D5C4F300697F46 /* cstrnbin.h */; };
-		4C386EAD19D5E70E00697F46 /* cstrnchk.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1D19D5C4F300697F46 /* cstrnchk.h */; };
-		4C386EAE19D5E70E00697F46 /* cstrncmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CAC19D5C4F300697F46 /* cstrncmp.h */; };
-		4C386EAF19D5E70E00697F46 /* cstrnops.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2A19D5C4F300697F46 /* cstrnops.h */; };
-		4C386EB019D5E70E00697F46 /* cstrnpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1E19D5C4F300697F46 /* cstrnpsr.h */; };
-		4C386EB119D5E70E00697F46 /* cstrnutl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CAD19D5C4F300697F46 /* cstrnutl.h */; };
-		4C386EB219D5E70E00697F46 /* default.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1F19D5C4F300697F46 /* default.h */; };
+		4C386EAC19D5E70E00697F46 /* cstrnbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2919D5C4F300697F46 /* cstrnbin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EAD19D5E70E00697F46 /* cstrnchk.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1D19D5C4F300697F46 /* cstrnchk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EAE19D5E70E00697F46 /* cstrncmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CAC19D5C4F300697F46 /* cstrncmp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EAF19D5E70E00697F46 /* cstrnops.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2A19D5C4F300697F46 /* cstrnops.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EB019D5E70E00697F46 /* cstrnpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1E19D5C4F300697F46 /* cstrnpsr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EB119D5E70E00697F46 /* cstrnutl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CAD19D5C4F300697F46 /* cstrnutl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EB219D5E70E00697F46 /* default.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1F19D5C4F300697F46 /* default.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EB319D5E70E00697F46 /* defins.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CAE19D5C4F300697F46 /* defins.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386EB419D5E70E00697F46 /* developr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386C9C19D5C4F300697F46 /* developr.h */; };
-		4C386EB519D5E70E00697F46 /* dffctbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CAF19D5C4F300697F46 /* dffctbin.h */; };
+		4C386EB419D5E70E00697F46 /* developr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386C9C19D5C4F300697F46 /* developr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EB519D5E70E00697F46 /* dffctbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CAF19D5C4F300697F46 /* dffctbin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EB619D5E70E00697F46 /* dffctbsc.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CB019D5C4F300697F46 /* dffctbsc.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386EB719D5E70F00697F46 /* dffctcmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2B19D5C4F300697F46 /* dffctcmp.h */; };
+		4C386EB719D5E70F00697F46 /* dffctcmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2B19D5C4F300697F46 /* dffctcmp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EB819D5E70F00697F46 /* dffctdef.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CB119D5C4F300697F46 /* dffctdef.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386EB919D5E70F00697F46 /* dffctpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CB219D5C4F300697F46 /* dffctpsr.h */; };
-		4C386EBA19D5E70F00697F46 /* dffnxbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CB319D5C4F300697F46 /* dffnxbin.h */; };
-		4C386EBB19D5E70F00697F46 /* dffnxcmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CB419D5C4F300697F46 /* dffnxcmp.h */; };
-		4C386EBC19D5E70F00697F46 /* dffnxexe.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CB519D5C4F300697F46 /* dffnxexe.h */; };
+		4C386EB919D5E70F00697F46 /* dffctpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CB219D5C4F300697F46 /* dffctpsr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EBA19D5E70F00697F46 /* dffnxbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CB319D5C4F300697F46 /* dffnxbin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EBB19D5E70F00697F46 /* dffnxcmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CB419D5C4F300697F46 /* dffnxcmp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EBC19D5E70F00697F46 /* dffnxexe.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CB519D5C4F300697F46 /* dffnxexe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EBD19D5E70F00697F46 /* dffnxfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CB619D5C4F300697F46 /* dffnxfun.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386EBE19D5E70F00697F46 /* dffnxpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CB719D5C4F300697F46 /* dffnxpsr.h */; };
-		4C386EBF19D5E70F00697F46 /* dfinsbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CB819D5C4F300697F46 /* dfinsbin.h */; };
-		4C386EC019D5E70F00697F46 /* dfinscmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CB919D5C4F300697F46 /* dfinscmp.h */; };
+		4C386EBE19D5E70F00697F46 /* dffnxpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CB719D5C4F300697F46 /* dffnxpsr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EBF19D5E70F00697F46 /* dfinsbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CB819D5C4F300697F46 /* dfinsbin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EC019D5E70F00697F46 /* dfinscmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CB919D5C4F300697F46 /* dfinscmp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EC119D5E70F00697F46 /* drive.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CFD19D5C4F300697F46 /* drive.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386EC219D5E70F00697F46 /* ed.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CBA19D5C4F300697F46 /* ed.h */; };
-		4C386EC319D5E70F00697F46 /* emathfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CFE19D5C4F300697F46 /* emathfun.h */; };
+		4C386EC219D5E70F00697F46 /* ed.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CBA19D5C4F300697F46 /* ed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EC319D5E70F00697F46 /* emathfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CFE19D5C4F300697F46 /* emathfun.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EC419D5E70F00697F46 /* engine.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386C9619D5C4F300697F46 /* engine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EC519D5E71000697F46 /* envrnmnt.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CFF19D5C4F300697F46 /* envrnmnt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EC619D5E71000697F46 /* evaluatn.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386C9719D5C4F300697F46 /* evaluatn.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EC719D5E71000697F46 /* expressn.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CBB19D5C4F300697F46 /* expressn.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386EC819D5E71000697F46 /* exprnbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CBC19D5C4F300697F46 /* exprnbin.h */; };
-		4C386EC919D5E71000697F46 /* exprnops.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CBD19D5C4F300697F46 /* exprnops.h */; };
+		4C386EC819D5E71000697F46 /* exprnbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CBC19D5C4F300697F46 /* exprnbin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EC919D5E71000697F46 /* exprnops.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CBD19D5C4F300697F46 /* exprnops.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386ECA19D5E71000697F46 /* exprnpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0019D5C4F300697F46 /* exprnpsr.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386ECB19D5E71000697F46 /* extnfunc.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0119D5C4F300697F46 /* extnfunc.h */; };
-		4C386ECC19D5E71000697F46 /* factbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2C19D5C4F300697F46 /* factbin.h */; };
-		4C386ECD19D5E71000697F46 /* factbld.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2D19D5C4F300697F46 /* factbld.h */; };
-		4C386ECE19D5E71000697F46 /* factcmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2E19D5C4F300697F46 /* factcmp.h */; };
+		4C386ECB19D5E71000697F46 /* extnfunc.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0119D5C4F300697F46 /* extnfunc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386ECC19D5E71000697F46 /* factbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2C19D5C4F300697F46 /* factbin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386ECD19D5E71000697F46 /* factbld.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2D19D5C4F300697F46 /* factbld.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386ECE19D5E71000697F46 /* factcmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2E19D5C4F300697F46 /* factcmp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386ECF19D5E71000697F46 /* factcom.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0219D5C4F300697F46 /* factcom.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386ED019D5E71100697F46 /* factfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0319D5C4F300697F46 /* factfun.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386ED119D5E71100697F46 /* factgen.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0419D5C4F300697F46 /* factgen.h */; };
+		4C386ED119D5E71100697F46 /* factgen.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0419D5C4F300697F46 /* factgen.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386ED219D5E71100697F46 /* facthsh.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0519D5C4F300697F46 /* facthsh.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386ED319D5E71100697F46 /* factlhs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2F19D5C4F300697F46 /* factlhs.h */; };
-		4C386ED419D5E71100697F46 /* factmch.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3019D5C4F300697F46 /* factmch.h */; };
+		4C386ED319D5E71100697F46 /* factlhs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2F19D5C4F300697F46 /* factlhs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386ED419D5E71100697F46 /* factmch.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3019D5C4F300697F46 /* factmch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386ED519D5E71100697F46 /* factmngr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386C9819D5C4F300697F46 /* factmngr.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386ED619D5E71100697F46 /* factprt.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3119D5C4F300697F46 /* factprt.h */; };
-		4C386ED719D5E71100697F46 /* factqpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CBE19D5C4F300697F46 /* factqpsr.h */; };
-		4C386ED819D5E71200697F46 /* factqury.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CBF19D5C4F300697F46 /* factqury.h */; };
-		4C386ED919D5E71200697F46 /* factrete.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2019D5C4F300697F46 /* factrete.h */; };
-		4C386EDA19D5E71200697F46 /* factrhs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3219D5C4F300697F46 /* factrhs.h */; };
+		4C386ED619D5E71100697F46 /* factprt.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3119D5C4F300697F46 /* factprt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386ED719D5E71100697F46 /* factqpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CBE19D5C4F300697F46 /* factqpsr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386ED819D5E71200697F46 /* factqury.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CBF19D5C4F300697F46 /* factqury.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386ED919D5E71200697F46 /* factrete.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2019D5C4F300697F46 /* factrete.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EDA19D5E71200697F46 /* factrhs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3219D5C4F300697F46 /* factrhs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EDB19D5E71200697F46 /* filecom.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0619D5C4F300697F46 /* filecom.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EDC19D5E71200697F46 /* filertr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3319D5C4F300697F46 /* filertr.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386EDD19D5E71200697F46 /* generate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0719D5C4F300697F46 /* generate.h */; };
-		4C386EDE19D5E71200697F46 /* genrcbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CC019D5C4F300697F46 /* genrcbin.h */; };
-		4C386EDF19D5E71200697F46 /* genrccmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CC119D5C4F300697F46 /* genrccmp.h */; };
+		4C386EDD19D5E71200697F46 /* generate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0719D5C4F300697F46 /* generate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EDE19D5E71200697F46 /* genrcbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CC019D5C4F300697F46 /* genrcbin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EDF19D5E71200697F46 /* genrccmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CC119D5C4F300697F46 /* genrccmp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EE019D5E71200697F46 /* genrccom.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CC219D5C4F300697F46 /* genrccom.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386EE119D5E71300697F46 /* genrcexe.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CC319D5C4F300697F46 /* genrcexe.h */; };
+		4C386EE119D5E71300697F46 /* genrcexe.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CC319D5C4F300697F46 /* genrcexe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EE219D5E71300697F46 /* genrcfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CC419D5C4F300697F46 /* genrcfun.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386EE319D5E71300697F46 /* genrcpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CC519D5C4F300697F46 /* genrcpsr.h */; };
-		4C386EE419D5E71300697F46 /* globlbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CC619D5C4F300697F46 /* globlbin.h */; };
+		4C386EE319D5E71300697F46 /* genrcpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CC519D5C4F300697F46 /* genrcpsr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EE419D5E71300697F46 /* globlbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CC619D5C4F300697F46 /* globlbin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EE519D5E71300697F46 /* globlbsc.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CC719D5C4F300697F46 /* globlbsc.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386EE619D5E71300697F46 /* globlcmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3419D5C4F300697F46 /* globlcmp.h */; };
+		4C386EE619D5E71300697F46 /* globlcmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3419D5C4F300697F46 /* globlcmp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EE719D5E71300697F46 /* globlcom.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CC819D5C4F300697F46 /* globlcom.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EE819D5E71300697F46 /* globldef.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CC919D5C4F300697F46 /* globldef.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386EE919D5E71400697F46 /* globlpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2119D5C4F300697F46 /* globlpsr.h */; };
-		4C386EEA19D5E71400697F46 /* immthpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CCA19D5C4F300697F46 /* immthpsr.h */; };
+		4C386EE919D5E71400697F46 /* globlpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2119D5C4F300697F46 /* globlpsr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EEA19D5E71400697F46 /* immthpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CCA19D5C4F300697F46 /* immthpsr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EEB19D5E71400697F46 /* incrrset.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0819D5C4F300697F46 /* incrrset.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386EEC19D5E71400697F46 /* inherpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CCB19D5C4F300697F46 /* inherpsr.h */; };
+		4C386EEC19D5E71400697F46 /* inherpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CCB19D5C4F300697F46 /* inherpsr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EED19D5E71400697F46 /* inscom.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CCC19D5C4F300697F46 /* inscom.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EEE19D5E71400697F46 /* insfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CCD19D5C4F300697F46 /* insfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EEF19D5E71400697F46 /* insfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CCE19D5C4F300697F46 /* insfun.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386EF019D5E71500697F46 /* insmngr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CCF19D5C4F300697F46 /* insmngr.h */; };
-		4C386EF119D5E71500697F46 /* insmoddp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CD019D5C4F300697F46 /* insmoddp.h */; };
-		4C386EF219D5E71500697F46 /* insmult.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CD119D5C4F300697F46 /* insmult.h */; };
-		4C386EF319D5E71500697F46 /* inspsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CD219D5C4F300697F46 /* inspsr.h */; };
-		4C386EF419D5E71500697F46 /* insquery.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CD319D5C4F300697F46 /* insquery.h */; };
-		4C386EF519D5E71500697F46 /* insqypsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CD419D5C4F300697F46 /* insqypsr.h */; };
+		4C386EF019D5E71500697F46 /* insmngr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CCF19D5C4F300697F46 /* insmngr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EF119D5E71500697F46 /* insmoddp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CD019D5C4F300697F46 /* insmoddp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EF219D5E71500697F46 /* insmult.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CD119D5C4F300697F46 /* insmult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EF319D5E71500697F46 /* inspsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CD219D5C4F300697F46 /* inspsr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EF419D5E71500697F46 /* insquery.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CD319D5C4F300697F46 /* insquery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EF519D5E71500697F46 /* insqypsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CD419D5C4F300697F46 /* insqypsr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EF619D5E71500697F46 /* iofun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386C9E19D5C4F300697F46 /* iofun.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386EF719D5E71600697F46 /* lgcldpnd.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0919D5C4F300697F46 /* lgcldpnd.h */; };
-		4C386EF819D5E71600697F46 /* match.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0A19D5C4F300697F46 /* match.h */; };
+		4C386EF719D5E71600697F46 /* lgcldpnd.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0919D5C4F300697F46 /* lgcldpnd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EF819D5E71600697F46 /* match.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0A19D5C4F300697F46 /* match.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EF919D5E71600697F46 /* memalloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0B19D5C4F300697F46 /* memalloc.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386EFA19D5E71600697F46 /* miscfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CD519D5C4F300697F46 /* miscfun.h */; };
-		4C386EFB19D5E71600697F46 /* modulbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CD619D5C4F300697F46 /* modulbin.h */; };
+		4C386EFA19D5E71600697F46 /* miscfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CD519D5C4F300697F46 /* miscfun.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EFB19D5E71600697F46 /* modulbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CD619D5C4F300697F46 /* modulbin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386EFC19D5E71600697F46 /* modulbsc.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CD719D5C4F300697F46 /* modulbsc.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386EFD19D5E71700697F46 /* modulcmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3519D5C4F300697F46 /* modulcmp.h */; };
-		4C386EFE19D5E71700697F46 /* moduldef.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CD819D5C4F300697F46 /* moduldef.h */; };
-		4C386EFF19D5E71700697F46 /* modulpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3619D5C4F300697F46 /* modulpsr.h */; };
-		4C386F0019D5E71700697F46 /* modulutl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CD919D5C4F300697F46 /* modulutl.h */; };
+		4C386EFD19D5E71700697F46 /* modulcmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3519D5C4F300697F46 /* modulcmp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EFE19D5E71700697F46 /* moduldef.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CD819D5C4F300697F46 /* moduldef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386EFF19D5E71700697F46 /* modulpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3619D5C4F300697F46 /* modulpsr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F0019D5E71700697F46 /* modulutl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CD919D5C4F300697F46 /* modulutl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386F0119D5E71700697F46 /* msgcom.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CDA19D5C4F300697F46 /* msgcom.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386F0219D5E71700697F46 /* msgfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CDB19D5C4F300697F46 /* msgfun.h */; };
+		4C386F0219D5E71700697F46 /* msgfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CDB19D5C4F300697F46 /* msgfun.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386F0319D5E71800697F46 /* msgpass.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CDC19D5C4F300697F46 /* msgpass.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386F0419D5E71800697F46 /* msgpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CDD19D5C4F300697F46 /* msgpsr.h */; };
-		4C386F0519D5E71800697F46 /* multifld.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0C19D5C4F300697F46 /* multifld.h */; };
-		4C386F0619D5E71800697F46 /* multifun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CDE19D5C4F300697F46 /* multifun.h */; };
-		4C386F0719D5E71800697F46 /* network.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386C9D19D5C4F300697F46 /* network.h */; };
-		4C386F0819D5E71900697F46 /* objbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CDF19D5C4F300697F46 /* objbin.h */; };
-		4C386F0919D5E71900697F46 /* objcmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CE019D5C4F300697F46 /* objcmp.h */; };
-		4C386F0A19D5E71900697F46 /* object.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CE119D5C4F300697F46 /* object.h */; };
-		4C386F0B19D5E71900697F46 /* objrtbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CE219D5C4F300697F46 /* objrtbin.h */; };
-		4C386F0C19D5E71900697F46 /* objrtbld.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CE319D5C4F300697F46 /* objrtbld.h */; };
-		4C386F0D19D5E71900697F46 /* objrtcmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CE419D5C4F300697F46 /* objrtcmp.h */; };
-		4C386F0E19D5E71A00697F46 /* objrtfnx.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CE519D5C4F300697F46 /* objrtfnx.h */; };
-		4C386F0F19D5E71A00697F46 /* objrtgen.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CE619D5C4F300697F46 /* objrtgen.h */; };
+		4C386F0419D5E71800697F46 /* msgpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CDD19D5C4F300697F46 /* msgpsr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F0519D5E71800697F46 /* multifld.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0C19D5C4F300697F46 /* multifld.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F0619D5E71800697F46 /* multifun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CDE19D5C4F300697F46 /* multifun.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F0719D5E71800697F46 /* network.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386C9D19D5C4F300697F46 /* network.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F0819D5E71900697F46 /* objbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CDF19D5C4F300697F46 /* objbin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F0919D5E71900697F46 /* objcmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CE019D5C4F300697F46 /* objcmp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F0A19D5E71900697F46 /* object.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CE119D5C4F300697F46 /* object.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F0B19D5E71900697F46 /* objrtbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CE219D5C4F300697F46 /* objrtbin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F0C19D5E71900697F46 /* objrtbld.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CE319D5C4F300697F46 /* objrtbld.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F0D19D5E71900697F46 /* objrtcmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CE419D5C4F300697F46 /* objrtcmp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F0E19D5E71A00697F46 /* objrtfnx.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CE519D5C4F300697F46 /* objrtfnx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F0F19D5E71A00697F46 /* objrtgen.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CE619D5C4F300697F46 /* objrtgen.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386F1019D5E71A00697F46 /* objrtmch.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CE719D5C4F300697F46 /* objrtmch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386F1119D5E71A00697F46 /* parsefun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3719D5C4F300697F46 /* parsefun.h */; };
-		4C386F1219D5E71A00697F46 /* pattern.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0D19D5C4F300697F46 /* pattern.h */; };
-		4C386F1319D5E71B00697F46 /* pprint.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0E19D5C4F300697F46 /* pprint.h */; };
-		4C386F1419D5E71B00697F46 /* prccode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CE819D5C4F300697F46 /* prccode.h */; };
-		4C386F1519D5E71B00697F46 /* prcdrfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CE919D5C4F300697F46 /* prcdrfun.h */; };
-		4C386F1619D5E71B00697F46 /* prcdrpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CEA19D5C4F300697F46 /* prcdrpsr.h */; };
-		4C386F1719D5E71C00697F46 /* prdctfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2219D5C4F300697F46 /* prdctfun.h */; };
-		4C386F1819D5E71C00697F46 /* prntutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0F19D5C4F300697F46 /* prntutil.h */; };
-		4C386F1919D5E71C00697F46 /* proflfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2319D5C4F300697F46 /* proflfun.h */; };
-		4C386F1A19D5E71C00697F46 /* reorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386C9919D5C4F300697F46 /* reorder.h */; };
-		4C386F1B19D5E71C00697F46 /* reteutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1019D5C4F300697F46 /* reteutil.h */; };
-		4C386F1C19D5E71D00697F46 /* retract.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1119D5C4F300697F46 /* retract.h */; };
+		4C386F1119D5E71A00697F46 /* parsefun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3719D5C4F300697F46 /* parsefun.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F1219D5E71A00697F46 /* pattern.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0D19D5C4F300697F46 /* pattern.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F1319D5E71B00697F46 /* pprint.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0E19D5C4F300697F46 /* pprint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F1419D5E71B00697F46 /* prccode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CE819D5C4F300697F46 /* prccode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F1519D5E71B00697F46 /* prcdrfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CE919D5C4F300697F46 /* prcdrfun.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F1619D5E71B00697F46 /* prcdrpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CEA19D5C4F300697F46 /* prcdrpsr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F1719D5E71C00697F46 /* prdctfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2219D5C4F300697F46 /* prdctfun.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F1819D5E71C00697F46 /* prntutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D0F19D5C4F300697F46 /* prntutil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F1919D5E71C00697F46 /* proflfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2319D5C4F300697F46 /* proflfun.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F1A19D5E71C00697F46 /* reorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386C9919D5C4F300697F46 /* reorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F1B19D5E71C00697F46 /* reteutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1019D5C4F300697F46 /* reteutil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F1C19D5E71D00697F46 /* retract.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1119D5C4F300697F46 /* retract.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386F1D19D5E71D00697F46 /* router.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1219D5C4F300697F46 /* router.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386F1E19D5E71D00697F46 /* rulebin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CEB19D5C4F300697F46 /* rulebin.h */; };
-		4C386F1F19D5E71D00697F46 /* rulebld.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1319D5C4F300697F46 /* rulebld.h */; };
+		4C386F1E19D5E71D00697F46 /* rulebin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CEB19D5C4F300697F46 /* rulebin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F1F19D5E71D00697F46 /* rulebld.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1319D5C4F300697F46 /* rulebld.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386F2019D5E71E00697F46 /* rulebsc.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CEC19D5C4F300697F46 /* rulebsc.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386F2119D5E71E00697F46 /* rulecmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1419D5C4F300697F46 /* rulecmp.h */; };
+		4C386F2119D5E71E00697F46 /* rulecmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1419D5C4F300697F46 /* rulecmp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386F2219D5E71E00697F46 /* rulecom.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CED19D5C4F300697F46 /* rulecom.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386F2319D5E71E00697F46 /* rulecstr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2419D5C4F300697F46 /* rulecstr.h */; };
+		4C386F2319D5E71E00697F46 /* rulecstr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2419D5C4F300697F46 /* rulecstr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386F2419D5E71F00697F46 /* ruledef.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CEE19D5C4F300697F46 /* ruledef.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386F2519D5E71F00697F46 /* ruledlt.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3819D5C4F300697F46 /* ruledlt.h */; };
-		4C386F2619D5E71F00697F46 /* rulelhs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1519D5C4F300697F46 /* rulelhs.h */; };
-		4C386F2719D5E71F00697F46 /* rulepsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386C9419D5C4F300697F46 /* rulepsr.h */; };
-		4C386F2819D5E71F00697F46 /* scanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1619D5C4F300697F46 /* scanner.h */; };
+		4C386F2519D5E71F00697F46 /* ruledlt.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3819D5C4F300697F46 /* ruledlt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F2619D5E71F00697F46 /* rulelhs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1519D5C4F300697F46 /* rulelhs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F2719D5E71F00697F46 /* rulepsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386C9419D5C4F300697F46 /* rulepsr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F2819D5E71F00697F46 /* scanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1619D5C4F300697F46 /* scanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386F2919D5E72000697F46 /* setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386C9519D5C4F300697F46 /* setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386F2A19D5E72000697F46 /* sortfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3919D5C4F300697F46 /* sortfun.h */; };
+		4C386F2A19D5E72000697F46 /* sortfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3919D5C4F300697F46 /* sortfun.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386F2B19D5E72000697F46 /* strngfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1719D5C4F300697F46 /* strngfun.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386F2C19D5E72000697F46 /* strngrtr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1819D5C4F300697F46 /* strngrtr.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386F2D19D5E72100697F46 /* symblbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CEF19D5C4F300697F46 /* symblbin.h */; };
-		4C386F2E19D5E72100697F46 /* symblcmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CF019D5C4F300697F46 /* symblcmp.h */; };
+		4C386F2D19D5E72100697F46 /* symblbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CEF19D5C4F300697F46 /* symblbin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F2E19D5E72100697F46 /* symblcmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CF019D5C4F300697F46 /* symblcmp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386F2F19D5E72100697F46 /* symbol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1919D5C4F300697F46 /* symbol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386F3019D5E72100697F46 /* sysdep.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CF119D5C4F300697F46 /* sysdep.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386F3119D5E72200697F46 /* textpro.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CF219D5C4F300697F46 /* textpro.h */; };
-		4C386F3219D5E72200697F46 /* tmpltbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CF319D5C4F300697F46 /* tmpltbin.h */; };
+		4C386F3119D5E72200697F46 /* textpro.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CF219D5C4F300697F46 /* textpro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F3219D5E72200697F46 /* tmpltbin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CF319D5C4F300697F46 /* tmpltbin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386F3319D5E72200697F46 /* tmpltbsc.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CF419D5C4F300697F46 /* tmpltbsc.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386F3419D5E72200697F46 /* tmpltcmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3A19D5C4F300697F46 /* tmpltcmp.h */; };
+		4C386F3419D5E72200697F46 /* tmpltcmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3A19D5C4F300697F46 /* tmpltcmp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386F3519D5E72300697F46 /* tmpltdef.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CF519D5C4F300697F46 /* tmpltdef.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386F3619D5E72300697F46 /* tmpltfun.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386CF619D5C4F300697F46 /* tmpltfun.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386F3719D5E72300697F46 /* tmpltlhs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3B19D5C4F300697F46 /* tmpltlhs.h */; };
-		4C386F3819D5E72400697F46 /* tmpltpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3C19D5C4F300697F46 /* tmpltpsr.h */; };
-		4C386F3919D5E72400697F46 /* tmpltrhs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3D19D5C4F300697F46 /* tmpltrhs.h */; };
-		4C386F3A19D5E72400697F46 /* tmpltutl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2519D5C4F300697F46 /* tmpltutl.h */; };
-		4C386F3B19D5E72400697F46 /* userdata.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3E19D5C4F300697F46 /* userdata.h */; };
-		4C386F3C19D5E72500697F46 /* usrsetup.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2619D5C4F300697F46 /* usrsetup.h */; };
+		4C386F3719D5E72300697F46 /* tmpltlhs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3B19D5C4F300697F46 /* tmpltlhs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F3819D5E72400697F46 /* tmpltpsr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3C19D5C4F300697F46 /* tmpltpsr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F3919D5E72400697F46 /* tmpltrhs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3D19D5C4F300697F46 /* tmpltrhs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F3A19D5E72400697F46 /* tmpltutl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2519D5C4F300697F46 /* tmpltutl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F3B19D5E72400697F46 /* userdata.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D3E19D5C4F300697F46 /* userdata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C386F3C19D5E72500697F46 /* usrsetup.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D2619D5C4F300697F46 /* usrsetup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386F3D19D5E72500697F46 /* utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386C9A19D5C4F300697F46 /* utility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C386F3E19D5E72500697F46 /* watch.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C386D1A19D5C4F300697F46 /* watch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C386F4119D8A39000697F46 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 4C386F4019D8A39000697F46 /* README.md */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CD305EB19EC39FC007DD198 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C386C7219D4C1BF00697F46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C386C7919D4C1BF00697F46;
+			remoteInfo = CLIPS;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4C386C7819D4C1BF00697F46 /* CopyFiles */ = {
@@ -1110,66 +1134,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C386F1019D5E71A00697F46 /* objrtmch.h in Headers */,
-				4C386F0319D5E71800697F46 /* msgpass.h in Headers */,
-				4C386F0119D5E71700697F46 /* msgcom.h in Headers */,
-				4C386EEF19D5E71400697F46 /* insfun.h in Headers */,
-				4C386EEE19D5E71400697F46 /* insfile.h in Headers */,
-				4C386EED19D5E71400697F46 /* inscom.h in Headers */,
-				4C386EB319D5E70E00697F46 /* defins.h in Headers */,
-				4C386E9F19D5E70E00697F46 /* classpsr.h in Headers */,
-				4C386E9E19D5E70E00697F46 /* classini.h in Headers */,
-				4C386E9D19D5E70E00697F46 /* classinf.h in Headers */,
-				4C386E9B19D5E70E00697F46 /* classexm.h in Headers */,
-				4C386E9A19D5E70E00697F46 /* classcom.h in Headers */,
-				4C386EE219D5E71300697F46 /* genrcfun.h in Headers */,
-				4C386EE019D5E71200697F46 /* genrccom.h in Headers */,
-				4C386EBD19D5E70F00697F46 /* dffnxfun.h in Headers */,
-				4C386EE719D5E71300697F46 /* globlcom.h in Headers */,
-				4C386EE519D5E71300697F46 /* globlbsc.h in Headers */,
-				4C386EE819D5E71300697F46 /* globldef.h in Headers */,
-				4C386ED219D5E71100697F46 /* facthsh.h in Headers */,
-				4C386ED519D5E71100697F46 /* factmngr.h in Headers */,
-				4C386ED019D5E71100697F46 /* factfun.h in Headers */,
-				4C386ECF19D5E71000697F46 /* factcom.h in Headers */,
-				4C386F3619D5E72300697F46 /* tmpltfun.h in Headers */,
-				4C386F3319D5E72200697F46 /* tmpltbsc.h in Headers */,
-				4C386F3519D5E72300697F46 /* tmpltdef.h in Headers */,
-				4C386EB619D5E70E00697F46 /* dffctbsc.h in Headers */,
-				4C386EB819D5E70F00697F46 /* dffctdef.h in Headers */,
-				4C386EA719D5E70E00697F46 /* crstrtgy.h in Headers */,
-				4C386F2219D5E71E00697F46 /* rulecom.h in Headers */,
-				4C386EEB19D5E71400697F46 /* incrrset.h in Headers */,
-				4C386EC119D5E70F00697F46 /* drive.h in Headers */,
-				4C386EC419D5E70F00697F46 /* engine.h in Headers */,
-				4C386F2019D5E71E00697F46 /* rulebsc.h in Headers */,
-				4C386F2419D5E71F00697F46 /* ruledef.h in Headers */,
-				4C386E9919D5E70E00697F46 /* bsave.h in Headers */,
-				4C386E9719D5E70E00697F46 /* bload.h in Headers */,
-				4C386EFC19D5E71600697F46 /* modulbsc.h in Headers */,
-				4C386F3E19D5E72500697F46 /* watch.h in Headers */,
-				4C386F3D19D5E72500697F46 /* utility.h in Headers */,
-				4C386EA519D5E70E00697F46 /* constrct.h in Headers */,
-				4C386EC619D5E71000697F46 /* evaluatn.h in Headers */,
-				4C386ECA19D5E71000697F46 /* exprnpsr.h in Headers */,
-				4C386EC719D5E71000697F46 /* expressn.h in Headers */,
-				4C386E9819D5E70E00697F46 /* bmathfun.h in Headers */,
-				4C386F3019D5E72100697F46 /* sysdep.h in Headers */,
-				4C386EF619D5E71500697F46 /* iofun.h in Headers */,
-				4C386F2C19D5E72000697F46 /* strngrtr.h in Headers */,
-				4C386EDC19D5E71200697F46 /* filertr.h in Headers */,
-				4C386F1D19D5E71D00697F46 /* router.h in Headers */,
-				4C386F2F19D5E72100697F46 /* symbol.h in Headers */,
-				4C386EA219D5E70E00697F46 /* commline.h in Headers */,
-				4C386EC519D5E71000697F46 /* envrnmnt.h in Headers */,
-				4C386F2B19D5E72000697F46 /* strngfun.h in Headers */,
-				4C386EDB19D5E71200697F46 /* filecom.h in Headers */,
-				4C386EAB19D5E70E00697F46 /* cstrcpsr.h in Headers */,
-				4C386EF919D5E71600697F46 /* memalloc.h in Headers */,
-				4C386E9319D5E65A00697F46 /* clips.h in Headers */,
-				4C386EA419D5E70E00697F46 /* constant.h in Headers */,
-				4C386F2919D5E72000697F46 /* setup.h in Headers */,
-				4C386E9619D5E70D00697F46 /* argacces.h in Headers */,
 				4C386E9419D5E70D00697F46 /* agenda.h in Headers */,
 				4C386E9519D5E70D00697F46 /* analysis.h in Headers */,
 				4C386E9C19D5E70E00697F46 /* classfun.h in Headers */,
@@ -1282,6 +1246,66 @@
 				4C386F3A19D5E72400697F46 /* tmpltutl.h in Headers */,
 				4C386F3B19D5E72400697F46 /* userdata.h in Headers */,
 				4C386F3C19D5E72500697F46 /* usrsetup.h in Headers */,
+				4C386F1019D5E71A00697F46 /* objrtmch.h in Headers */,
+				4C386F0319D5E71800697F46 /* msgpass.h in Headers */,
+				4C386F0119D5E71700697F46 /* msgcom.h in Headers */,
+				4C386EEF19D5E71400697F46 /* insfun.h in Headers */,
+				4C386EEE19D5E71400697F46 /* insfile.h in Headers */,
+				4C386EED19D5E71400697F46 /* inscom.h in Headers */,
+				4C386EB319D5E70E00697F46 /* defins.h in Headers */,
+				4C386E9F19D5E70E00697F46 /* classpsr.h in Headers */,
+				4C386E9E19D5E70E00697F46 /* classini.h in Headers */,
+				4C386E9D19D5E70E00697F46 /* classinf.h in Headers */,
+				4C386E9B19D5E70E00697F46 /* classexm.h in Headers */,
+				4C386E9A19D5E70E00697F46 /* classcom.h in Headers */,
+				4C386EE219D5E71300697F46 /* genrcfun.h in Headers */,
+				4C386EE019D5E71200697F46 /* genrccom.h in Headers */,
+				4C386EBD19D5E70F00697F46 /* dffnxfun.h in Headers */,
+				4C386EE719D5E71300697F46 /* globlcom.h in Headers */,
+				4C386EE519D5E71300697F46 /* globlbsc.h in Headers */,
+				4C386EE819D5E71300697F46 /* globldef.h in Headers */,
+				4C386ED219D5E71100697F46 /* facthsh.h in Headers */,
+				4C386ED519D5E71100697F46 /* factmngr.h in Headers */,
+				4C386ED019D5E71100697F46 /* factfun.h in Headers */,
+				4C386ECF19D5E71000697F46 /* factcom.h in Headers */,
+				4C386F3619D5E72300697F46 /* tmpltfun.h in Headers */,
+				4C386F3319D5E72200697F46 /* tmpltbsc.h in Headers */,
+				4C386F3519D5E72300697F46 /* tmpltdef.h in Headers */,
+				4C386EB619D5E70E00697F46 /* dffctbsc.h in Headers */,
+				4C386EB819D5E70F00697F46 /* dffctdef.h in Headers */,
+				4C386EA719D5E70E00697F46 /* crstrtgy.h in Headers */,
+				4C386F2219D5E71E00697F46 /* rulecom.h in Headers */,
+				4C386EEB19D5E71400697F46 /* incrrset.h in Headers */,
+				4C386EC119D5E70F00697F46 /* drive.h in Headers */,
+				4C386EC419D5E70F00697F46 /* engine.h in Headers */,
+				4C386F2019D5E71E00697F46 /* rulebsc.h in Headers */,
+				4C386F2419D5E71F00697F46 /* ruledef.h in Headers */,
+				4C386E9919D5E70E00697F46 /* bsave.h in Headers */,
+				4C386E9719D5E70E00697F46 /* bload.h in Headers */,
+				4C386EFC19D5E71600697F46 /* modulbsc.h in Headers */,
+				4C386F3E19D5E72500697F46 /* watch.h in Headers */,
+				4C386F3D19D5E72500697F46 /* utility.h in Headers */,
+				4C386EA519D5E70E00697F46 /* constrct.h in Headers */,
+				4C386EC619D5E71000697F46 /* evaluatn.h in Headers */,
+				4C386ECA19D5E71000697F46 /* exprnpsr.h in Headers */,
+				4C386EC719D5E71000697F46 /* expressn.h in Headers */,
+				4C386E9819D5E70E00697F46 /* bmathfun.h in Headers */,
+				4C386F3019D5E72100697F46 /* sysdep.h in Headers */,
+				4C386EF619D5E71500697F46 /* iofun.h in Headers */,
+				4C386F2C19D5E72000697F46 /* strngrtr.h in Headers */,
+				4C386EDC19D5E71200697F46 /* filertr.h in Headers */,
+				4C386F1D19D5E71D00697F46 /* router.h in Headers */,
+				4C386F2F19D5E72100697F46 /* symbol.h in Headers */,
+				4C386EA219D5E70E00697F46 /* commline.h in Headers */,
+				4C386EC519D5E71000697F46 /* envrnmnt.h in Headers */,
+				4C386F2B19D5E72000697F46 /* strngfun.h in Headers */,
+				4C386EDB19D5E71200697F46 /* filecom.h in Headers */,
+				4C386EAB19D5E70E00697F46 /* cstrcpsr.h in Headers */,
+				4C386EF919D5E71600697F46 /* memalloc.h in Headers */,
+				4C386E9319D5E65A00697F46 /* clips.h in Headers */,
+				4C386EA419D5E70E00697F46 /* constant.h in Headers */,
+				4C386F2919D5E72000697F46 /* setup.h in Headers */,
+				4C386E9619D5E70D00697F46 /* argacces.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1296,6 +1320,7 @@
 				4C386C7719D4C1BF00697F46 /* Frameworks */,
 				4C386C7819D4C1BF00697F46 /* CopyFiles */,
 				4C386E9219D5E5ED00697F46 /* Headers */,
+				4CD305E619EC37D6007DD198 /* Build Framework */,
 			);
 			buildRules = (
 			);
@@ -1318,6 +1343,9 @@
 					4C386C7919D4C1BF00697F46 = {
 						CreatedOnToolsVersion = 6.0.1;
 					};
+					4CD305E719EC39AC007DD198 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
 				};
 			};
 			buildConfigurationList = 4C386C7519D4C1BF00697F46 /* Build configuration list for PBXProject "CLIPS" */;
@@ -1333,9 +1361,41 @@
 			projectRoot = "";
 			targets = (
 				4C386C7919D4C1BF00697F46 /* CLIPS */,
+				4CD305E719EC39AC007DD198 /* Framework */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CD305E619EC37D6007DD198 /* Build Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nexport FRAMEWORK_LOCN=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\n\n# Create the path to the real Headers die\nmkdir -p \"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Create the required symlinks\n/bin/ln -sfh A \"${FRAMEWORK_LOCN}/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${FRAMEWORK_LOCN}/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \\\n\"${FRAMEWORK_LOCN}/${PRODUCT_NAME}\"\n\n# Copy the public headers into the framework\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \\\n\"${FRAMEWORK_LOCN}/Versions/A/Headers\"";
+		};
+		4CD305ED19EC3A0F007DD198 /* MultiPlatform Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "MultiPlatform Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\n# If we're already inside this script then die\nif [ -n \"$RW_MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\nexit 0\nfi\nexport RW_MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\nRW_FRAMEWORK_NAME=${PROJECT_NAME}\nRW_INPUT_STATIC_LIB=\"lib${PROJECT_NAME}.a\"\nRW_FRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework\"\n\nfunction build_static_library {\n    # Will rebuild the static library as specified\n    #     build_static_library sdk\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n    -target \"${TARGET_NAME}\" \\\n    -configuration \"${CONFIGURATION}\" \\\n    -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    # Will smash 2 static libs together\n    #     make_fat_library in1 in2 out\n    xcrun lipo -create \"${1}\" \"${2}\" -output \"${3}\"\n}\n\n# 1 - Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\nRW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 2 - Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\nRW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 3 - Determine the other platform\nif [ \"$RW_SDK_PLATFORM\" == \"iphoneos\" ]; then\nRW_OTHER_PLATFORM=iphonesimulator\nelse\nRW_OTHER_PLATFORM=iphoneos\nfi\n\n# 4 - Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$RW_SDK_PLATFORM$ ]]; then\nRW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${RW_OTHER_PLATFORM}\"\nelse\necho \"Could not find other platform build directory.\"\nexit 1\nfi\n\n# Build the other platform.\nbuild_static_library \"${RW_OTHER_PLATFORM}${RW_SDK_VERSION}\"\n\n# If we're currently building for iphonesimulator, then need to rebuild\n#   to ensure that we get both i386 and x86_64\nif [ \"$RW_SDK_PLATFORM\" == \"iphonesimulator\" ]; then\nbuild_static_library \"${SDK_NAME}\"\nfi\n\n# Join the 2 static libs into 1 and push into the .framework\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Ensure that the framework is present in both platform's build directories\ncp -a \"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Copy the framework to the user's desktop\nditto \"${RW_FRAMEWORK_LOCATION}\" \"${HOME}/Desktop/${RW_FRAMEWORK_NAME}.framework\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C386C7619D4C1BF00697F46 /* Sources */ = {
@@ -1404,7 +1464,6 @@
 				4C386E6719D5C55000697F46 /* symbol.c in Sources */,
 				4C386E6419D5C55000697F46 /* scanner.c in Sources */,
 				4C386DF819D5C55000697F46 /* bload.c in Sources */,
-				4C386F4119D8A39000697F46 /* README.md in Sources */,
 				4C386E1A19D5C55000697F46 /* dffctcmp.c in Sources */,
 				4C386E1919D5C55000697F46 /* dffctbsc.c in Sources */,
 				4C386E5A19D5C55000697F46 /* objrtmch.c in Sources */,
@@ -1517,6 +1576,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4CD305EC19EC39FC007DD198 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C386C7919D4C1BF00697F46 /* CLIPS */;
+			targetProxy = 4CD305EB19EC39FC007DD198 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		4C386C8919D4C1BF00697F46 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1595,22 +1662,39 @@
 		4C386C8C19D4C1BF00697F46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEAD_CODE_STRIPPING = YES;
+				DEAD_CODE_STRIPPING = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "Non-Global Symbols";
 			};
 			name = Debug;
 		};
 		4C386C8D19D4C1BF00697F46 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEAD_CODE_STRIPPING = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "Non-Global Symbols";
+			};
+			name = Release;
+		};
+		4CD305E919EC39AC007DD198 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4CD305EA19EC39AC007DD198 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -1631,6 +1715,15 @@
 			buildConfigurations = (
 				4C386C8C19D4C1BF00697F46 /* Debug */,
 				4C386C8D19D4C1BF00697F46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CD305E819EC39AC007DD198 /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CD305E919EC39AC007DD198 /* Debug */,
+				4CD305EA19EC39AC007DD198 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
